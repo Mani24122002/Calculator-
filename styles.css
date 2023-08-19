@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.display {
+  width: 100%;
+  height: 50px;
+  background-color: #f0f0f0;
+  font-size: 24px;
+  text-align: right;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background-color: #efefef;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Different colors for operators */
+.btn.operator {
+  background-color: #ff9900; /* Orange */
+}
+
+.btn.operator:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
